@@ -1,2 +1,22 @@
 # DockerKubernetesUNIFECAF
 DockerKubernetesUNIFECAF
+
+powershel: minikube start //Tente por ultimo se não der os de baixo
+
+//Tente primeiro mas instale o bubectl na config e enable ele DockerDesktop
+
+cd C:\Users\Yan\Desktop\dockertrabalho
+kubectl apply -f nginx-deployment.yaml
+kubectl apply -f apache-deployment.yaml
+kubectl get pods
+kubectl get services
+kubectl port-forward service/nginx-service 8080:8080
+kubectl port-forward service/apache-service 8081:8081
+
+
+NGINX server: localhost:8080 ou 127.0.0.1:8080
+APACHE server: localhost:8081
+
+//PARAR/DEL
+kubectl delete -f nginx-deployment.yaml
+kubectl delete -f apache-deployment.yaml
