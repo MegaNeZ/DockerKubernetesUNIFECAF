@@ -2,7 +2,7 @@ powershel: minikube start //Tente por ultimo se não der os de baixo
 
 //Tente primeiro mas instale o bubectl na config e enable ele DockerDesktop
 
-cd C:\Users\Yan\Desktop\dockertrabalho
+cd /OndeEstáOsArquivos/
 kubectl apply -f nginx-deployment.yaml
 kubectl apply -f apache-deployment.yaml
 kubectl get pods
